@@ -33,7 +33,7 @@ handin:
 	@tar cvzf submission.tar.gz ./*
 	@echo "  submission file successfully created in submission.tar.gz"
 	@echo "Initiating submission..."
-	python3 scripts/submit.py $(PROJECT_NAME) submission.tar.gz -s $(PROJECT_SERVER) -p $(PROJECT_PORT)
+	python3 submit.py $(PROJECT_NAME) submission.tar.gz -s $(PROJECT_SERVER) -p $(PROJECT_PORT)
 	@echo "Submission complete. Cleaning up."
 	@rm -f submission.tar.gz
 
